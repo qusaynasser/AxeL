@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeBgContext } from '../contextWrapper/ThemeWrapper';
 import { Switch } from "@material-tailwind/react";
-
+import headerImg from '../../../public/images/headerImage.png'
 export default function Header() {
   const { theme, handelTheme } = useContext(ThemeBgContext);
   console.log(theme);
@@ -53,7 +53,7 @@ export default function Header() {
           </div>
           <div className="img mt-6 sm:mt-0">
             <img 
-              src="/public/images/headerImage.png" 
+              src={headerImg} 
               alt="headerImage" 
               className='animateImg h-[350px] sm:h-[550px] w-full bg-no-repeat bg-center z-10 rounded-xl relative'
             />
