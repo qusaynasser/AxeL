@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .pushable {
+    background: hsl(208deg 100% 32%);
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Inter";
+    padding: 0px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline-offset: 2px;
+  }
+  .front {
+    display: block;
+    padding: 18px 20px;
+    border-radius: 25px;
+    font-size: 1.15rem;
+    background: #4169e1;
+    color: white;
+    font-family: "Inter";
+    transform: translateY(-6px);
+}
+  .front2 {
+    display: block;
+    padding: 18px 20px;
+    border-radius: 25px;
+    font-size: 1.15rem;
+    background: hsl(202 99% 38%);
+    color: white;
+    font-family: "Inter";
+    transform: translateY(-6px);
+  }
+  .front:active {
+    transform: translateY(-2px);
+}
+  .transform {
+    transform: translateY(-200px);
+  }
+  /* ............ */
+
+  .animateImg
+  {
+    animation: bounce 4s linear infinite;
+    -webkit-animation: bounce 4s linear infinite;
+}
+
+@keyframes bounce{
+  0%
+  {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+  }
+  50%
+  {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
+  100%
+  {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+}
+/* ********************** */
+
+
+}
