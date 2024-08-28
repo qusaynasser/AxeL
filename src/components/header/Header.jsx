@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeBgContext } from '../contextWrapper/ThemeWrapper';
 import { Switch } from "@material-tailwind/react";
 import headerImg from '../../../public/images/headerImage.png'
+
 export default function Header() {
   const { theme, handelTheme } = useContext(ThemeBgContext);
   console.log(theme);
@@ -16,7 +17,7 @@ export default function Header() {
             <Switch
               color="blue"
               onClick={handelTheme}
-              defaultChecked={theme === 'dark' ? true : false}
+              defaultChecked={theme === 'dark' ? true : true}
             />
           </div>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from "../header/Header";
 import FurnitureFlow from "../midSection/FurnitureFlow";
 import MidComponentParent from "../midSection/MidComponentParent";
@@ -9,14 +9,13 @@ import Navbar from "../navbar/Navbar";
 import WrapperContainer from "../wrapperContainer/WrapperContainer";
 import Footer from '../footer/Footer';
 import PopUpButton from '../popUpButton/PopUpButton';
-import { MobileNav } from '@material-tailwind/react';
+
 
 export default function Home() {
     return (
         <div className='relative'>
-            <MobileNav/>
-            <div className=" fixed right-4 bottom-0">
-                <PopUpButton/>
+            <div className=" fixed right-4 bottom-0 z-50">
+                <PopUpButton />
             </div>
             <div className=" bg-white">
                 <WrapperContainer navHed={true}>
@@ -32,7 +31,7 @@ export default function Home() {
                     <FurnitureFlow />
                     <Cards />
                 </WrapperContainer>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     );
